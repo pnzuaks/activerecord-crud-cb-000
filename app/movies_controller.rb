@@ -53,9 +53,9 @@ end
 def can_find_by_multiple_attributes
   # Search Values:
   #
-  args = {title == "Title"
-  # release_date == 2000
-  # director == "Me"}
+  args = {:title == "Title",
+  release_date == 2000
+  director == "Me"}
   Movie.find_by(args)
 end
 
