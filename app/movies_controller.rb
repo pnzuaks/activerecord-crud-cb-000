@@ -49,7 +49,7 @@ end
 def can_find_the_first_item_from_the_database_using_id
 
   my_movie = Movie.select(:id).first
-  my_movie.title = "Movie_0"
+  Movie.update(my_movie.id, title = "Movie_0")
 
 end
 
